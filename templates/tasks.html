@@ -1,0 +1,11 @@
+<h2>tasks</h2>
+
+<form method="POST" action="/tasks">
+  <input type="text" name="text" placeholder="请填写一个 task">
+</form>
+
+<ul>
+  {{#each tasks}}
+    <li>{{text}}</li>
+  {{/each}}
+</ul>
